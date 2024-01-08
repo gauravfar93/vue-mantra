@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView} from 'vue-router'
 
 </script>
 
@@ -8,6 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/signup">Signup</RouterLink>
       </nav>
 
   <RouterView />
@@ -29,6 +30,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 </style>
