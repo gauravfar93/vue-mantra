@@ -13,6 +13,7 @@ arrayData.forEach(input => {
     console.log(input.name)
 });
 
+
 console.log(inputValues)
 
 const submittedData = {};
@@ -24,14 +25,14 @@ const handleFormSubmit = () => {
     } 
     console.log(submittedData  )
        // Save submitted data to Local Storage
-    let localData = JSON.parse(localStorage.getItem("signup"));
+    let localData = JSON.parse(localStorage.getItem(arrayData[0].formName));
     if (!localData) {
         localData = []
     }
     console.log("localdata" +localData)
     localData.push(submittedData);
     console.log(localData)
-    localStorage.setItem("signup", JSON.stringify(localData));
+    localStorage.setItem(arrayData[0].formName, JSON.stringify(localData));
     alert("form submitted")
     console.log(submittedData);
 }
@@ -80,6 +81,6 @@ h1 {
     width: 100px;
     height: 40px;
     border-radius: 10px;
-    background-color: aqua;
+    background-color: grey;
 }
 </style>
