@@ -30,36 +30,46 @@ onMounted(async () => {
 .productContainer {
     position: absolute;
     top: 50px;
-    left: 0;
+    left: 5;
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 95vw;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 2rem;
     padding: 20px;
     overflow: hidden;
+    /* border: 1px solid black; */
+    margin-top: 15px;
+
+   
 }
 
 
 .product {
     height: 350px;
-    width: 250px;
+    width: 290px;
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.295);
+     /* border: 1px solid rgba(0, 0, 0, 0.295);  */
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    padding: 5px;
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.37);
+    padding: 30px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     transition: 0.3s;
 }
 
 
+.product > div > p{
+    text-align: center ;
+    font-size: medium;
+}
+
+
 .product:hover {
-    box-shadow: 0 0 5px 5px rgba(0, 174, 255, 0.37);
+    box-shadow: 0 0 3px 3px rgba(0, 174, 255, 0.37);
 }
 
 .product:active {
@@ -67,7 +77,13 @@ onMounted(async () => {
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    /* border: 1px solid grey; */
+    width: 190px;
+    height: 180px;
+    align-items: center;
+    
 }
 </style>

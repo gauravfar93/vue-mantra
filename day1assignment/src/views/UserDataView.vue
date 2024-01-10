@@ -46,13 +46,13 @@ getSurveyData("signup")
 }
 
 h1 {
-    margin-top: 50px;
+    margin-top: 65px;
 }
 
 .container {
-    border: 2px solid black;
-    border-radius: 20px;
-    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* background-color: lightgray; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +62,7 @@ h1 {
 }
 
 .containerFirst {
-    border: 2px solid black;
+    border: 1px solid black;
     width: 250px;
     border-radius: 10px;
     margin-top: 10px;
