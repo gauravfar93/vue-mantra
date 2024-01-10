@@ -42,7 +42,7 @@ const handleFormSubmit = () => {
 <template>
     <form @submit.prevent="handleFormSubmit" class="form_containe">
         <input v-for="data in arrayData" :type="data.type" :key="data.id" :placeholder="data.placeholder"
-            v-model="inputValues[data.name].value" />
+            v-model="inputValues[data.name].value" class="inputbox" />
         <!-- <input type="text" placeholder="enter email" />
         <input type="number" placeholder="enter number" />
         <input type="text" placeholder="enter password" /> -->
@@ -51,6 +51,9 @@ const handleFormSubmit = () => {
 </template>
 
 <style>
+.inputbox{
+    width: 300px;
+}
 h1 {
     text-align: center;
     color: gray;
@@ -65,6 +68,8 @@ h1 {
     align-items: center;
     margin: auto;
     border: 1px solid grey;
+    width: 400px;
+    border-radius: 10px;
 }
 
 .form_containe input {
@@ -82,5 +87,8 @@ h1 {
     height: 40px;
     border-radius: 10px;
     background-color: grey;
+}
+.form_submit:hover{
+    background-color: darkgray;
 }
 </style>

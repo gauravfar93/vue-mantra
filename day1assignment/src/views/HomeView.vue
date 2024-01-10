@@ -3,8 +3,16 @@ import Home from "../components/Home.vue"
 </script>
 
 <template>
-<Home />
+    <section class="homeParent">
+        <Home />
+    </section>
 </template>
 
-<style >
+<style>
+.homeParent{
+    display: flex;
+justify-content: center;
+align-items: center;
+
+}
 </style>
