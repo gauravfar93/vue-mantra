@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const data = ref(null)
+const data = ref(null);
 
 onMounted(async () => {
     try {
@@ -17,12 +17,15 @@ onMounted(async () => {
 <template>
     <div class="productContainer">
         <div v-for="data in data" class="product">
-            <div>
-                <img :src="data.image" alt="unfound" />
-                <p>{{ data.title }}</p>
-                <p>{{ data.category }}</p>
-                <p>{{ data.price }}</p>
-            </div>
+            <RouterLink :to="`/product/${data.id}`">
+                <div>
+                    <img :src="data.image" alt="unfound" />
+                    <!-- <p>{{ data.id }}</p> -->
+                    <p>{{ data.title }}</p>
+                    <p>{{ data.category }}</p>
+                    <p>{{ data.price }}</p>
+                </div>
+            </RouterLink>
         </div>
     </div>
 </template>
@@ -42,7 +45,14 @@ onMounted(async () => {
     /* border: 1px solid black; */
     margin-top: 15px;
 
-   
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -50,7 +60,7 @@ onMounted(async () => {
     height: 350px;
     width: 290px;
     overflow: hidden;
-     /* border: 1px solid rgba(0, 0, 0, 0.295);  */
+    /* border: 1px solid rgba(0, 0, 0, 0.295);  */
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -59,11 +69,12 @@ onMounted(async () => {
     padding: 30px 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     transition: 0.3s;
+
 }
 
 
-.product > div > p{
-    text-align: center ;
+.product>div>p {
+    text-align: center;
     font-size: medium;
 }
 
@@ -84,6 +95,8 @@ img {
     width: 190px;
     height: 180px;
     align-items: center;
-    
+
 }
+
+a {}
 </style>

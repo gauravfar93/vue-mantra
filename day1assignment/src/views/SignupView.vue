@@ -46,6 +46,7 @@ const arrayData = [
 <style scoped>
 h1{
 margin-top: 65px;
-}</style>
+}
+</style>
  
   
