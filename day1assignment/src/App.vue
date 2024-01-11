@@ -46,6 +46,13 @@ nav {
   border-radius: 10px;
   
 }
+a{
+    text-decoration: none;
+    border: 1px solid grey;
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 </style>

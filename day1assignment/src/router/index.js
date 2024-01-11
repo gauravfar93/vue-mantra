@@ -4,6 +4,7 @@ import SignupView from '../views/SignupView.vue'
 import LoginView from "../views/LoginView.vue"
 import UserDataView from "../views/UserDataView.vue"
 import ParentView from "../views/ParentView.vue"
+import ProductView from "../views/ProductView.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -46,6 +47,11 @@ const router = createRouter({
       path: '/emits',
       name: 'emits',
       component: ParentView
+    },
+    {
+      path: '/product/:id',
+      name: 'product',
+      component: ProductView
     }
   ]
 })
