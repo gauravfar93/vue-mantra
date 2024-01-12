@@ -31,7 +31,7 @@ const arrayData = [
   
 <style scoped>
 h1{
-margin-top: 65px;
+margin-top: 80px;
 
 }</style>
  

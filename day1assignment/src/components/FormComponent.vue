@@ -86,7 +86,7 @@ h1 {
     width: 100px;
     height: 40px;
     border-radius: 10px;
-    background-color: grey;
+    /* background-color: grey; */
 }
 .form_submit:hover{
     background-color: darkgray;

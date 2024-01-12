@@ -10,6 +10,6 @@ import Bcomponent from '@/components/Bcomponent.vue';
 </template>
 <style scoped>
 .container-pinia{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 </style>

@@ -7,7 +7,7 @@
 <style scoped>
 @media (min-width: 1024px) {
   h1{
-    margin-top: 65px;
+    margin-top: 80px;
   }
 }
 </style>

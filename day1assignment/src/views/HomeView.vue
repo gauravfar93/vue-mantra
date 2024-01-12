@@ -6,13 +6,14 @@ import Home from "../components/Home.vue"
     <section class="homeParent">
         <Home />
     </section>
+    
 </template>
 
 <style>
-.homeParent{
+.homeParent {
     display: flex;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 
 }
 </style>
