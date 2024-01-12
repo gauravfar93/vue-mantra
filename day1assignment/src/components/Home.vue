@@ -1,22 +1,26 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { onMounted } from "vue";
+import { useApiStore } from "@/stores/counter";
+const apistore = useApiStore();
+// const data = ref(null);
 
-const data = ref(null);
-
-onMounted(async () => {
-    try {
-        const res = await fetch("https://fakestoreapi.com/products");
-        const resdata = await res.json();
-        data.value = resdata
-    }
-    catch (error) {
-        console.log(error)
-    }
+// onMounted(async () => {
+//     try {
+//         const res = await fetch("https://fakestoreapi.com/products");
+//         const resdata = await res.json();
+//         data.value = resdata
+//     }
+//     catch (error) {
+//         console.log(error)
+//     }
+// })
+onMounted(()=>{
+    apistore.getData()
 })
 </script>
 <template>
     <div class="productContainer">
-        <div v-for="data in data" class="product">
+        <div v-for="data in apistore.data" class="product">
             <RouterLink :to="`/product/${data.id}`">
                 <div>
                     <img :src="data.image" alt="unfound" />
