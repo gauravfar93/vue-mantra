@@ -12,6 +12,7 @@ import { RouterLink, RouterView} from 'vue-router'
         <RouterLink class="icons" to="/login">Login</RouterLink>
         <RouterLink class="icons" to="/userdata">User Info</RouterLink>
         <RouterLink class="icons" to="/emits">Emits/Events</RouterLink>
+        <RouterLink class="icons" to="/pinia">Pinia Store View</RouterLink>
       </nav>
        
 
