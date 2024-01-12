@@ -36,7 +36,7 @@ onMounted(()=>{
     padding: 20px;
     overflow: hidden;
     /* border: 1px solid black; */
-    margin-top: 15px;
+    margin-top: 30px;
 
 
 }

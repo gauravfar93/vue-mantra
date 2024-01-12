@@ -8,7 +8,7 @@ console.log(store)
     <div class="Box">
         <h2>Count : {{ store.count }}</h2>
         <h2>Double Count : {{ store.doubleCount }}</h2>
-        <button @click="store.increment">Increment</button>
+        <button @click="store.increment" class="piniabtn">Increment</button>
     </div>
 </template>
 <style scoped>
@@ -17,5 +17,14 @@ console.log(store)
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.piniabtn{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+.piniabtn:hover {
+    background-color: darkgray;
 }
 </style>

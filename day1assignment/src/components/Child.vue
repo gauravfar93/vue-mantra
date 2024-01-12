@@ -24,7 +24,9 @@ const GetData = () => {
     width: 150px;
     height: 35px;
     border-radius: 10px;
-    background-color: grey;
-
+    /* background-color: grey; */
+}
+.buttonChild:hover {
+    background-color: darkgray;
 }
 </style>

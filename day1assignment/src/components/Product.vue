@@ -25,7 +25,6 @@ onMounted(async () => {
 <template>
     <div class="parent">
         <h1>Product Details</h1>
-
         <div class="container">
             <img :src="`${data.image}`" alt="unfound" />
             <!-- <p>{{ data.id }}</p> -->
@@ -87,7 +86,7 @@ p {
     width: 100px;
     height: 40px;
     border-radius: 10px;
-    background-color: grey;
+    /* background-color: grey; */
     margin-top: 10px;
     margin-bottom: 25px;
 }
@@ -98,4 +97,5 @@ p {
 
 .price {
     font-weight: bold;
-}</style>
+}
+</style>

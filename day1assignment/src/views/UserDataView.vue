@@ -16,10 +16,7 @@ const getSurveyData = (signup) => {
 };
 getSurveyData("signup")
 
-
-
 </script>
-
 
 <template>
     <h1>User Info</h1>
@@ -46,7 +43,7 @@ getSurveyData("signup")
 }
 
 h1 {
-    margin-top: 65px;
+    margin-top: 90px;
 }
 
 .container {
