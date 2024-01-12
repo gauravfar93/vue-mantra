@@ -1,5 +1,5 @@
 <script setup>
-import { useCounterStore } from "../stores/counter";
+import { useCounterStore } from "../stores/store";
 const store = useCounterStore();
 console.log(store)
 </script>
